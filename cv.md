@@ -10,7 +10,9 @@
 
 ## Profile
 
-Front-end Developer with experience in React and Next.js. I focus on building interfaces, working with APIs, and collaborating in international teams. I joined RS School to learn Full-Stack development, explore new technologies, and refresh my knowledge of core theory.
+## Profile
+
+Front-end Developer with experience in React and Next.js. I focus on building responsive interfaces, working with APIs, and collaborating in international teams. I care about writing clean, maintainable code and continuous learning. I joined RS School to expand into Full-Stack development, explore new approaches, and refresh my knowledge of core theory.
 
 ## Skills
 
