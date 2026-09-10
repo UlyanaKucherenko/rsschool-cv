@@ -1,9 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Uliana Kucherenko - CV</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>CV</body>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-image">
+        <img class="avatar-img" src="./images/avatar.jpeg" alt="Uliana Kucherenko" width="136" height="136">
+      </div>
+      <div class="header-main">
+        <h1 class="header-name">ULIANA<br>KUCHERENKO</h1>
+        <p class="header-role">Front-end Developer</p>
+      </div>
+      <ul class="header-contacts">
+        <li class="contact-location">Bucharest, Romania</li>
+        <li class="contact-phone"><a href="tel:+40775299186">+40775299186</a></li>
+        <li class="contact-email"><a href="mailto:kucherenko.ul.ana@gmail.com">kucherenko.ul.ana@gmail.com</a></li>
+        <li class="contact-links">
+          <a href="https://linkedin.com/in/uliana-kucherenko" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+          <a href="https://github.com/UlyanaKucherenko" target="_blank" rel="noreferrer noopener">GitHub</a>
+        </li>
+      </ul>
+    </header>
+    <main class="main">
+      <section class="section">
+        <h2 class="section-title">PROFILE</h2>
+        <div class="section-content">
+          <p class="profile-desc">
+            Front-end Developer with experience in React.js and Next.js. I focus on building responsive interfaces,
+            working with APIs, and collaborating in international teams. I care about writing clean, maintainable code
+            and continuous learning. I joined RS School to expand into Full-Stack development, explore new approaches,
+            and refresh my knowledge of core theory.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">SKILLS</h2>
+        <div class="section-content">
+          <div class="skills-columns">
+            <ul class="skills-list">
+              <li>JavaScript/TypeScript</li>
+              <li>HTML5/CSS3, SASS/SCSS</li>
+              <li>React.js</li>
+            </ul>
+            <ul class="skills-list">
+              <li>Next.js</li>
+              <li>UI libraries</li>
+              <li>Git, Jira, Figma</li>
+            </ul>
+            <ul class="skills-list">
+              <li>time management</li>
+              <li>documentation skills</li>
+              <li>teamwork and communication</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">WORK EXPERIENCE</h2>
+        <div class="section-content">
+          <article class="job-item">
+            <div class="job-header">
+              <h3 class="job-role">Front-end Developer, TopDevs Inc, Ukraine</h3>
+              <span class="job-period">Mar 2021 – Jun 2025</span>
+            </div>
+            <p class="job-project">Social network and streaming platform</p>
+            <ul class="job-bullets">
+              <li>Developed features for creating and viewing posts for different user roles, including administrators.
+              </li>
+              <li>Developed a notification system for chat and video calls, improving the product workflow.</li>
+              <li>Contributed technical insights and solutions during team and client meetings.</li>
+              <li>Optimized the codebase and improved application performance, efficiency, and reliability.</li>
+            </ul>
+          </article>
+
+          <article class="job-item">
+            <div class="job-header">
+              <h3 class="job-role">Front-end Developer, TeamChallenge.io, Ukraine</h3>
+              <span class="job-period">Oct 2023 – Feb 2024</span>
+            </div>
+            <ul class="job-bullets">
+              <li>Built public rooms and private messaging features for a real-time chat app.</li>
+              <li>Managed the project with SCRAM methodologies;</li>
+              <li>Created technical specifications for the team, for a better understanding of the work team and further
+                project planning;</li>
+              <li>Created task estimation and managed tasks with meeting deadlines and exceeding our targets</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">education</h2>
+        <div class="section-content">
+          <article class="education-item">
+            <div class="education-header">
+              <span class="education-degree">Bachelor Of Computer Sciences</span>
+              <span class="education-period">2016 – 2020</span>
+            </div>
+            <h3 class="education-school">National University "Zaporizhzhia Polytechnic"</h3>
+          </article>
+          <article class="education-item">
+            <div class="education-header">
+              <span class="education-degree">Fullstack Engineering Course</span>
+              <span class="education-period">Current</span>
+            </div>
+            <h3 class="education-school">RS School</h3>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Code Examples</h2>
+        <div class="code-exemple">
+          <pre><code>//JavaScript: sort numbers by the number of set bits
+            
+  function getBits(element) {
+  const bits = element.toString(2);
+  let bitCount = 0;
+
+  for (let index = 0; index &lt; bits.length; index += 1) {
+    if (bits[index] === "1") bitCount += 1;
+  }
+
+  return bitCount;
+}
+
+function sortByBit(numbers) {
+  numbers.sort((first, second) => {
+    const firstBitCount = getBits(first);
+    const secondBitCount = getBits(second);
+
+    return firstBitCount === secondBitCount
+      ? first - second
+      : firstBitCount - secondBitCount;
+  });
+
+  return numbers;
+}</code></pre>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">LANGUAGE</h2>
+        <div class="section-content">
+          <ul class="language-list">
+            <li><strong>English (B1) –</strong> communicate with teams and clients, read technical documentation.</li>
+            <li><strong>Ukrainian – native</strong></li>
+            <li><strong>Russian – native</strong></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+
 </html>
