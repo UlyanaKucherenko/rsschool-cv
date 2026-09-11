@@ -9,6 +9,8 @@
   --text-dark: #0f1115;
   --text-body: #23272e;
   --border-line: #d1d5db;
+  --bg-footer: #23272e;
+  --text-footer: #edf0f3;
 }
 
 * {
@@ -300,4 +302,28 @@ body {
 .language-list strong {
   font-weight: 700;
   color: var(--text-dark);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  color: var(--text-footer);
+  background-color: var(--bg-footer);
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--text-footer);
+}
+
+footer .github-icon {
+  margin-right: 10px;
+}
+
+.my-github {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
 }
